@@ -1,0 +1,26 @@
+*{
+   margin: 0;
+   padding: 0;
+   /* universal selector */
+}
+
+:root {
+  --color-sweet: #ff0606;
+  /* globl variavle */
+}
+
+.container {
+  border: 1px solid red;
+  background-color: brown;
+  height: 300px;
+  width: 300px;
+   /*  background-color: var(--color-sweet);
+   for this the global varible need and local variable doesn't work */
+}
+.box {
+  border: 2px solid greenyellow;
+  background-color: blue;
+  /* for local variavle exmple*/
+  --color-sweet: #ff0606;
+  color: var(--color-sweet);
+}
